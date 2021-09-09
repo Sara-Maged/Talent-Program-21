@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+  }
+
+  body{
+    margin: 10;
+    padding: 50;
+    font-family: sans-serif;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  th{
+      font-size: large;
+  }
+
+  tr{
+      text-align: center;
+  }
