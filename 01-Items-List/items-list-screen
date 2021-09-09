@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <!-- The Page/Project's Title -->
+    <title>Items List Screen</title>
+    <link rel="stylesheet" href="list-style.css">
+    <body>
+        <div class="center">
+            <h1>
+                ITEM LIST PAGE
+            </h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Vote Count</th>
+                </tr>
+                <tr>
+                    <td>Little Women</td>
+                    <td><img src="little-women.jpg" width="150" height="250"></td>
+                    <td>563</td>
+                </tr>
+                <tr>
+                    <td>US</td>
+                    <td><img src="us-poster.jpg" width="150" height="250"></td>
+                    <td>246</td>
+                </tr>
+                <tr>
+                    <td>Aladdin</td>
+                    <td><img src="aladdin-poster.jpg" width="150" height="250"></td>
+                    <td>847</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+  </head>
+</html>
