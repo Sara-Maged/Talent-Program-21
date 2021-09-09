@@ -1,0 +1,19 @@
+body{
+    margin: 10;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #72A0C1;
+}
+
+h1{
+    font-family: sans-serif;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
