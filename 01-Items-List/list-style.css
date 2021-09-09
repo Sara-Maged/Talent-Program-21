@@ -8,6 +8,13 @@ table {
     font-family: sans-serif;
 }
 
+div{
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
 .center {
     margin: 0;
     position: absolute;
@@ -18,9 +25,16 @@ table {
   }
 
   th{
-      font-size: large;
+      font-size: 45px;
+      margin: 25px 50px 75px 100px;
+  }
+
+  td{
+    font-family: sans-serif;
+    padding: 0 30px;
   }
 
   tr{
       text-align: center;
+      padding: 50 0px;
   }
