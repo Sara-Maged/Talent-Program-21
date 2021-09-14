@@ -4,7 +4,7 @@
     <title>Game</title>
 
     <link rel="stylesheet" href="game-style.css">
-    <!-- <script type="text/javascript" src="game-Javascript.js"></script> -->
+    <script type="text/javascript" src="game-Javascript.js"></script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -27,56 +27,24 @@
 
     <div class="split left">
 
-        <canvas class="split"></canvas>
-
-        <script type="text/javascript">
-            let canvas = document.querySelector("canvas");
-            let ctx = canvas.getContext("2d");
-
-            function drawCircle(xCenter, yCenter){
-                ctx.beginPath();
-
-                ctx.arc(xCenter, yCenter, 3, 0, 2 * Math.PI);
-                ctx.fill();
-            }
-
-            function generateRandom(minNumber, maxNumber){
-                let randomDecimal = Math.random(); // generates decimal from 0 to 1 
-                let range = maxNumber - minNumber;
-                let ScaleUp = Math.round(randomDecimal * range);
-                let finalnumber = minNumber + ScaleUp;
-
-                return finalnumber;
-            }
-
-            function drawRandomCircle(x1, y1, x2, y2){
-                let xCenter = generateRandom(x1, x2);
-                let yCenter = generateRandom(y1, y2);
-
-                drawCircle(xCenter, yCenter);
-            }
-
-            for(var i = 0; i < 5; i++){
-                drawRandomCircle(5, 5, 200, 100);
-            }
-
+      <div id="L">
+        <script>
+          startGame();
         </script>
-        
       </div>
+
+    </div>
       
       <div class="split right">
+        <!-- <img src="smiley.png" width="50" height="50"> -->
 
-        <canvas class="split"></canvas>
-
-          <script type="text/javascript">
-
-            let canvas = document.querySelector("canvas");
-            let ctx = canvas.getContext("2d");  
-            
-              for(var i = 0; i < 5; i++){
-                drawRandomCircle(300, 5, 500, 200);
-            }
+        <div id="R">
+          <script>
+            startGame();
           </script>
+    
+        </div>
+
       </div>
 
 
