@@ -1,15 +1,57 @@
 
-function startGame(){
-    for (var i = 0; i < 5; i++) {
-        Left = (Math.random() * 400) + 10;
-        Top = (Math.random() * 550) + 5;
+let level = 20, winner = 80;
 
-        $("#L").append("<img src = 'smiley.png' + width='50' + height='50' + id=" + i + ">");
-        $("#R").append("<img src = 'smiley.png' + width='50' + height='50' + id=" + i + ">");
-        $("#" + i).css({
-            "position": "relative",
-                "top": Top,
-                "left": Left
+function startGame(){
+    randomGenerator();
+    insertionExtra();
+};
+
+    function randomGenerator(){
+        for (var i = 0; i < level; i++) {
+            Left = Math.floor(Math.random() * 80) + 10;
+            Top = Math.floor(Math.random() * 80) + 5;
+
+            insertionR(Left, Top, i);
+            insertionL(Left, Top, i);
+
+    }
+    
+};
+
+function insertionL(left, top, iteratorL){
+    $("#L").append("<img src = 'smiley.png' width='50' height='50' id=" + iteratorL + ">");
+    return $("#" + iteratorL).css({
+            "position": "absolute",
+                "top": top + "%",
+                "left": left + "%"
         });
-    };
+        
+};
+
+function insertionR(left, top, iteratorR){
+    $("#R").append("<img src = 'smiley.png' width='50' height='50' id=" + iteratorR + ">");
+    return $("#" + iteratorR).css({
+            "position": "absolute",
+                "top": top + "%",
+                "left": left + "%"
+        });
+};
+
+
+function insertionExtra(iterationExtra){
+    $("#R").append("<img src = 'pokemon.png' width='50' height='50' onclick='next()' id=" + iterationExtra + ">");
+    return $("#" + iterationExtra).css({
+            "position": "absolute",
+                "top": Math.floor(Math.random() * 80) + 10 + "%",
+                "left": Math.floor(Math.random() * 80) + 5 + "%"
+        });
+};
+
+function next(){
+
+    level+=5;
+    $("img").remove();
+    startGame(level);
+
+    if(level > winner) alert("YOU WIN");
 }
