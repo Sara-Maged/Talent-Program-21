@@ -12,7 +12,7 @@
   /* Control the left side */
   .left {
     left: 0;
-    background-color: teal;
+    background-color: #1abc9c;
   }
   
   /* Control the right side */
@@ -21,17 +21,15 @@
     background-color: grey;
   }
 
-  /* canvas{
-      border: black;
-      background-color: chartreuse;
-  } */
-  
-  #area {
-    position:fixed;
-}
-.circle-yellow {
-    background: yellow;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
+  img{
+    background-color: transparent;
+    border: none;
+  }
+
+  .header {
+    padding: 8px;
+    text-align: center;
+    background: grey;
+    color: white;
+    font-size:5px;
+  }
