@@ -39,7 +39,7 @@ function insertionR(left, top, iteratorR){
 
 
 function insertionExtra(iterationExtra){
-    $("#R").append("<img src = 'pokemon.png' width='50' height='50' onclick='next()' id=" + iterationExtra + ">");
+    $("#R").append("<img src = 'smiley.png' width='50' height='50' onclick='next()' id=" + iterationExtra + ">");
     return $("#" + iterationExtra).css({
             "position": "absolute",
                 "top": Math.floor(Math.random() * 80) + 10 + "%",
