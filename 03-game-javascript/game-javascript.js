@@ -1,5 +1,5 @@
 
-let level = 20, winner = 80;
+let level = 5, winner = 50;
 
 function startGame(){
     randomGenerator();
